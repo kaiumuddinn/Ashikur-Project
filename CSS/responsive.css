@@ -1,0 +1,246 @@
+@media (max-width: 991px) {
+  #banner .contains p:first-child {
+    font-size: 15px;
+  }
+  #banner .contains h1 {
+    font-size: 34px;
+  }
+  #banner .contains p {
+    font-size: 15px;
+  }
+  #banner .contains > a {
+    padding: 9px 20px;
+    margin: 22px 12px 40px 0;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+  #banner .contains span {
+    margin-left: 5.5px;
+  }
+  #banner .contains label {
+    font-size: 16px;
+    line-height: 180%;
+    margin-right: 16px;
+  }
+  #banner .contains ul li a {
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    margin: 0 6.5px;
+    background-color: #f4f3f3;
+    color: black;
+    font-size: 16px;
+  }
+  #banner .contains .banner_sm {
+    text-align: center;
+    margin-top: 40px;
+  }
+  #about .text h4 {
+    font-size: 24px;
+  }
+  #about .text p {
+    font-size: 14px;
+    line-height: 171%;
+    color: #4d4d4d;
+  }
+  #about .text a {
+    padding: 11px 28px;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+  #about .text {
+    padding: 78px 0 0 0;
+  }
+  #branding {
+    margin: 0 16px;
+  }
+  #branding .container {
+    padding: 0 31px 0 40px;
+  }
+  #branding .cnt h4 {
+    font-size: 24px;
+  }
+  #branding .cnt p {
+    font-size: 14px;
+    line-height: 180%;
+  }
+  #branding .cnt a {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    border: none;
+    padding: 0;
+  }
+  #help {
+    margin: 75px 0 50px 0;
+  }
+  #help .text h4 {
+    text-align: left;
+    font-size: 24px;
+  }
+  #help .text p {
+    text-align: left;
+    font-size: 15px;
+    line-height: 180%;
+    color: #7a7a7a;
+  }
+  #help .text .row h5 {
+    font-size: 24px;
+  }
+  #help .text .row p {
+    font-size: 10px;
+    margin-top: -25px;
+  }
+  #work {
+    background-color: #fbfbfb;
+    padding-top: 32px;
+    padding-bottom: 39px;
+  }
+  #work .left::before {
+    display: none;
+  }
+  #work .left h4::before {
+    display: none;
+  }
+  #work .left h4::after {
+    display: none;
+  }
+  #work h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  #work .left h4 {
+    font-size: 15px;
+  }
+  #work .left p {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+  #work .right {
+    position: relative;
+  }
+  #work .right h4 {
+    font-size: 15px;
+    position: relative;
+  }
+  #work .right p {
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+  #work .right::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -45px;
+    height: 100%;
+    border-left: 1.5px dashed #7a7a7a;
+  }
+  #work .right h4::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 5px;
+    left: -56px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1.5px dashed #7a7a7a;
+  }
+  #work .right h4::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 11px;
+    left: -50px;
+    border-radius: 50%;
+    background-color: #52ab70;
+  }
+  #work .row:nth-child(3) .right h4::after {
+    background-color: #f17676;
+  }
+  #work .row:nth-child(4) .right h4::after {
+    background-color: #ffd233;
+  }
+  #expert {
+    padding: 38px 0 100px 0;
+  }
+  #expert .cnt h4 {
+    font-size: 24px;
+    margin-bottom: -30px;
+  }
+  #expert .cnt p {
+    font-size: 15px;
+  }
+  #expert .Btn {
+    padding: 12px 50px;
+    border-radius: 15px;
+  }
+  #services {
+    padding: 34px 0 40px 0;
+  }
+  #services h2 {
+    font-size: 24px;
+    text-align: left;
+  }
+  #services p {
+    font-size: 13px;
+    text-align: left;
+  }
+  #feedback h2 {
+    font-size: 24px;
+  }
+  #feedback p {
+    font-size: 13px;
+  }
+  #feedback img {
+    padding-right: 57px;
+  }
+  #feedback .contains p {
+    font-size: 15px;
+  }
+  #feedback .contains h5 {
+    font-size: 15px;
+    padding-left: 40px;
+    margin-top: -50px;
+  }
+  #feedback .contains span {
+    font-size: 12px;
+    padding-left: 40px;
+  }
+  #blog {
+    padding: 47px 0 89px 0;
+  }
+  #blog h2 {
+    font-size: 24px;
+    text-align: left;
+    padding-bottom: 80px;
+  }
+  #form {
+    padding: 0 16px;
+  }
+  #form .container {
+    border-radius: 19px;
+    padding: 32px 20px 42px 40px;
+  }
+  #form .text p {
+    font-size: 12px;
+  }
+  #form .text h4 {
+    font-size: 20px;
+  }
+  #form .form form{
+    margin-top: 40px;
+  }
+  #form .form form input {
+    padding: 12px 0 11px 20px;
+    font-size: 12px;
+    border-radius: 10px 0 0 10px;
+  }
+  #form .form form button {
+    padding: 12px 7px 11px 8px;
+    font-size: 12px;
+    border-radius: 0 10px 10px 0;
+  }
+}

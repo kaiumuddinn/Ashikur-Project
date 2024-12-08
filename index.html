@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashikur</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg d-none d-lg-block">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./Images/Logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">BLOGS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav id="navbar_sm" class="d-lg-none b-block">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="logo"><img src="./Images/Logo.png" alt=""></div>
+            </div>
+            <div class="col-6 text-end">
+              <div class="menu">
+                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 5.25V7H0V5.25H14ZM0 12.25H28V14H0V12.25ZM14 21V19.25H28V21H14Z" fill="black" />
+                  </svg>
+                </button>
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body text-start">
+                    <ul>
+                      <li><a href="#">HOME</a></li>
+                      <li><a href="#">ABOUT</a></li>
+                      <li><a href="#">PROJECTS</a></li>
+                      <li><a href="#">BLOGS</a></li>
+                      <li><a href="#">CONTACT</a></li>
+                    </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- NAVBAR END -->
+
+    <!-- BANNER -->
+     <section id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contains">
+              <p>Hello, I'm Arif Rahman  👋</p>
+              <h1>UIUX and Graphic Designer</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur </p>
+              <a href="#">Lets talk <span><i class="bi bi-send"></i></span></a>
+              <a href="#">Download CV <span><i class="bi bi-cloud-download"></i></span></a> <br>
+              <ul>
+                <label for="">Follow me :</label>
+                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+              </ul>
+              <div class="d-block d-lg-none">
+                <div class="banner_sm">
+                  <img src="./Images/Banner for mobile.png" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="image">
+              <img src="./Images/Banner.png" alt="Banner" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="d-none d-lg-block"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1921_68156)">
+          <path d="M20 7.5C20.3315 7.5 20.6495 7.6317 20.8839 7.86612C21.1183 8.10054 21.25 8.41848 21.25 8.75V13.75C21.25 14.0815 21.1183 14.3995 20.8839 14.6339C20.6495 14.8683 20.3315 15 20 15C19.6685 15 19.3505 14.8683 19.1161 14.6339C18.8817 14.3995 18.75 14.0815 18.75 13.75V8.75C18.75 8.41848 18.8817 8.10054 19.1161 7.86612C19.3505 7.6317 19.6685 7.5 20 7.5ZM30 27.5C30 30.1522 28.9464 32.6957 27.0711 34.5711C25.1957 36.4464 22.6522 37.5 20 37.5C17.3478 37.5 14.8043 36.4464 12.9289 34.5711C11.0536 32.6957 10 30.1522 10 27.5V12.5C10 9.84783 11.0536 7.3043 12.9289 5.42893C14.8043 3.55357 17.3478 2.5 20 2.5C22.6522 2.5 25.1957 3.55357 27.0711 5.42893C28.9464 7.3043 30 9.84783 30 12.5V27.5ZM20 0C16.6848 0 13.5054 1.31696 11.1612 3.66116C8.81696 6.00537 7.5 9.18479 7.5 12.5V27.5C7.5 30.8152 8.81696 33.9946 11.1612 36.3388C13.5054 38.683 16.6848 40 20 40C23.3152 40 26.4946 38.683 28.8388 36.3388C31.183 33.9946 32.5 30.8152 32.5 27.5V12.5C32.5 9.18479 31.183 6.00537 28.8388 3.66116C26.4946 1.31696 23.3152 0 20 0Z" fill="#686868" />
+        </g>
+        <defs>
+          <clipPath id="clip0_1921_68156">
+            <rect width="40" height="40" fill="white" />
+          </clipPath>
+        </defs>
+      </svg></span>
+     </section>
+    <!-- BANNER END -->
+
+
+    <!-- ABOUT -->
+     <section id="about">
+      <img src="./Images/About img mobile.png" alt="" class="img-fluid d-block d-lg-none test">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5">
+            <img src="./Images/About.png" alt="" class="d-none d-lg-block">
+          </div>
+          <div class="col-lg-6">
+           <div class="text">
+            <h4>About Me</h4>
+            <p>With 10 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+            <a href="#">See More</a>
+           </div>
+           <div class="mobile">
+            <img src="./Images/About mobile.png" alt="" class="img-fluid d-block d-lg-none">
+           </div>
+          </div>
+        </div>
+      </div>
+      <span class="d-none d-lg-block"><img src="./Images/About img.png" alt="" class="img-fluid"></span>
+     </section>
+    <!-- ABOUT END -->
+
+
+    <!-- CARD -->
+     <section id="card" class="d-none d-lg-block">
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-lg-4">
+            <div class="Card">
+              <img src="./Images/Card 1.png" alt="" class="img-fluid">
+              <h4>Pixel Perfect</h4>
+              <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="Card">
+              <img src="./Images/Card 2.png" alt="" class="img-fluid">
+              <h4>High Quality</h4>
+              <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="Card">
+              <img src="./Images/Card 3.png" alt="" class="img-fluid">
+              <h4>Awesome Idea</h4>
+              <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <section id="card_sm" class="d-lg-none d-block">
+      <div class="container">
+        <div class="Card">
+          <div class="row">
+            <div class="col-2 text-center">
+              <img src="./Images/Card_sm 1.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-10">
+              <h4>Pixel Perfect</h4>
+              <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <div class="row">
+            <div class="col-2 text-center">
+              <img src="./Images/Card_sm 2.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-10">
+              <h4>High Quality</h4>
+              <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+            </div>
+          </div>
+        </div>
+        <div class="Card">
+          <div class="row">
+            <div class="col-2 text-center">
+              <img src="./Images/Card_sm 3.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-10">
+              <h4>Awesome Idea</h4>
+              <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- CARD END -->
+
+
+    <!-- BRANDING -->
+     <section id="branding">
+       <div class="container">
+        <img src="./Images/Branding top right corner.png" alt="">
+        <span class="d-none d-lg-block"><img src="./Images/line_shape.png" alt=""></span>
+        <div class="row align-items-end">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <img src="./Images/Branding.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="cnt">
+              <h4>Branding</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ornare id faucibus nunc fusce tellus scelerisque adipiscing lorem. Mollis tortor, mattis urna imperdiet.</p>
+            <a href="#">See Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- BRANDING END -->
+
+
+    <!-- HELP -->
+     <section id="help">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-4 order-2 order-lg-1">
+            <div class="Card">
+              <div class="row align-items-center">
+                <div class="col-3 text-center">
+                  <img src="./Images/Help card 1.png" alt="">
+                </div>
+                <div class="col-9">
+                  <h5>Website Design</h5>
+                  <p>712 project</p>
+                </div>
+              </div>
+            </div>
+            <div class="Card">
+              <div class="row align-items-center">
+                <div class="col-3 text-center">
+                  <img src="./Images/Help card 2.png" alt="">
+                </div>
+                <div class="col-9">
+                  <h5>Mobile App Design</h5>
+                  <p>712 project</p>
+                </div>
+              </div>
+            </div>
+            <div class="Card">
+              <div class="row align-items-center">
+                <div class="col-3 text-center">
+                  <img src="./Images/Help card 3.png" alt="">
+                </div>
+                <div class="col-9">
+                  <h5>Brand Identity</h5>
+                  <p>712 project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2 text-end">
+            <div class="text">
+              <h4>What Do I Help?</h4>
+              <p>I will help you with finding a solution and solve your problems. We use process desigv n to create digital productes. Beside that also help their business.</p>
+              <div class="row justify-content-lg-end text-start">
+                <div class="col-3">
+                  <h5>250+</h5>
+                  <p>Project Completed</p>
+                </div>
+                <div class="col-3">
+                  <h5>150+</h5>
+                  <p>Happy Clients</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- HELP END -->
+
+
+    <!-- MY WORK -->
+     <section id="work">
+      <div class="container">
+        <h2>My Work Experience</h2>
+        <div class="row justify-content-between">
+          <div class="col-lg-3 col-5">
+            <div class="left">
+              <h4>Self Employ, India</h4>
+              <p>Sep 2019 - Aug 2020</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-5">
+            <div class="right">
+              <h4>Visual Designer</h4>
+              <p>A Visual designe design for a varaity of platforms which may includes internat and internet sites, games, movies and wareable. In short, they create the concept. </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-lg-3 col-5">
+            <div class="left">
+              <h4>New Man Service</h4>
+              <p>Sep 2019 - Aug 2020</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-5">
+            <div class="right">
+              <h4>UI/UX Designer</h4>
+              <p>A Visual designe design for a varaity of platforms which may includes internat and internet sites, games, movies and wareable. In short, they create the concept. </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-lg-3 col-5">
+            <div class="left">
+              <h4>Global Solution</h4>
+              <p>Sep 2019 - Aug 2020</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-5">
+            <div class="right">
+              <h4>Sr. Product Designer</h4>
+              <p>A Visual designe design for a varaity of platforms which may includes internat and internet sites, games, movies and wareable. In short, they create the concept. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- MY WORK END -->
+
+
+    <!-- EXPERT AREA -->
+     <section id="expert">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6">
+            <div class="cnt">
+              <h4>My Expert Areas</h4>
+              <p>You can express yourself however you want and whenever you want, for free. You can customize a template or make your own from scratch, with an immersive library at your disposal. You can express yourself however you want and whenever you free.  </p>
+              <p>You can customize a template or make your own from scratch, with an immersive library at your disposal.</p>
+              <div class="d-none d-lg-block">
+                <a href="#">Download CV <span><i class="bi bi-cloud-download"></i></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <span class="Btn">Skills</span>
+            <span class="Btn">Education</span>
+            <img src="./Images/Skills.png" alt="">
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- EXPERT AREA END-->
+
+
+    <!-- SERVICES -->
+     <section id="services">
+      <div class="container">
+        <h2>My Services</h2>
+        <p>Most common methods for designing websites that work well on </p>
+        <p>desktop is responsive and adaptive design</p>
+
+        <div class="row">
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="Card">
+              <img src="./Images/Service card 1.png" alt="">
+              <h4>Creative Design</h4>
+              <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="Card">
+              <img src="./Images/Service card 2.png" alt="">
+              <h4>UI/UX Design</h4>
+              <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="Card">
+              <img src="./Images/Service card 3.png" alt="">
+              <h4>Web Design</h4>
+              <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="Card_sm d-block d-lg-none gap">
+          <div class="row">
+            <div class="col-2 img">
+              <img src="./Images/Service card sm 1.png" alt="">
+            </div>
+            <div class="col-10">
+              <h4>Creative Design</h4>
+              <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+            </div>
+          </div>
+        </div>
+        <div class="Card_sm d-block d-lg-none">
+          <div class="row">
+            <div class="col-2 img">
+              <img src="./Images/Service card sm 2.png" alt="">
+            </div>
+            <div class="col-10">
+              <h4>UI/UX Design</h4>
+              <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+            </div>
+          </div>
+        </div>
+        <div class="Card_sm d-block d-lg-none">
+          <div class="row">
+            <div class="col-2 img">
+              <img src="./Images/Service card sm 3.png" alt="">
+            </div>
+            <div class="col-10">
+              <h4>Web Design</h4>
+              <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+     </section>
+    <!-- SERVICES END -->
+
+
+    <!-- FEEDBACK -->
+     <section id="feedback">
+      <div class="container">
+        <h2>Valuable feedback
+          from my client</h2>
+        <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center">
+            <img src="./Images/Feedback.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-6">
+            <div class="contains">
+              <p>“Awesome website! Easy to use and edit, it has a lot of options to design whatever you need, it is professional and fun. I was very successful creating my profile using designer which gave me unbelievable reach & appreciation.”</p>
+            <h5>Albert Walkers</h5>
+            <span>Vivaco Group</span>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- FEEDBACK END -->
+
+
+    <!-- BLOG -->
+     <section id="blog">
+      <div class="container">
+        <h2>From My Blog Post</h2>
+        <div class="row g-5">
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="blog-card">
+              <div class="row align-items-center">
+                <div class="col-lg-5 col-6">
+                  <img src="./Images/Blog card 1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-6 px-4">
+                  <span><i class="fa-regular fa-calendar-days"></i> 02 June, 2022</span>
+                  <span class="name">John Smith</span>
+                  <h4>Diversification of digital marketing stategies</h4>
+                  <a href="#">Read More <span><i class="bi bi-arrow-up-right"></i></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="blog-card">
+              <div class="row align-items-center">
+                <div class="col-lg-5">
+                  <img src="./Images/Blog card 2.png" alt="">
+                </div>
+                <div class="col-lg-6 px-4">
+                  <span><i class="fa-regular fa-calendar-days"></i> 02 June, 2022</span>
+                  <span class="name">John Smith</span>
+                  <h4>Diversification of digital marketing stategies</h4>
+                  <a href="#">Read More <span><i class="bi bi-arrow-up-right"></i></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="blog-card">
+              <div class="row align-items-center">
+                <div class="col-lg-5">
+                  <img src="./Images/Blog card 3.png" alt="">
+                </div>
+                <div class="col-lg-6 px-4">
+                  <span><i class="fa-regular fa-calendar-days"></i> 02 June, 2022</span>
+                  <span class="name">John Smith</span>
+                  <h4>Diversification of digital marketing stategies</h4>
+                  <a href="#">Read More <span><i class="bi bi-arrow-up-right"></i></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="blog-card">
+              <div class="row align-items-center">
+                <div class="col-lg-5">
+                  <img src="./Images/Blog card 4.png" alt="">
+                </div>
+                <div class="col-lg-6 px-4">
+                  <span><i class="fa-regular fa-calendar-days"></i> 02 June, 2022</span>
+                  <span class="name">John Smith</span>
+                  <h4>Diversification of digital marketing stategies</h4>
+                  <a href="#">Read More <span><i class="bi bi-arrow-up-right"></i></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog_sm d-lg-none d-block">
+          <div class="row align-items-center mb-4">
+            <div class="col-6 text-center">
+              <div class="img"><img src="./Images/Blog sm 1.png" alt=""></div>
+            </div>
+            <div class="col-6">
+              <div class="cnt">
+                <span><i class="fa-regular fa-calendar-days"></i> 02 June, 2022</span>
+                    <span class="name">John Smith</span>
+                    <h4>Diversification of digital marketing stategies</h4>
+                    <a href="#">Read More <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-6 text-center">
+              <div class="img"><img src="./Images/Blog sm 2.png" alt=""></div>
+            </div>
+            <div class="col-6">
+              <div class="cnt">
+                <span><i class="fa-regular fa-calendar-days"></i> 02 June, 2022</span>
+                    <span class="name">John Smith</span>
+                    <h4>Diversification of digital marketing stategies</h4>
+                    <a href="#">Read More <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- BLOG END -->
+
+
+    <!-- FORM -->
+     <section id="form">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="text">
+              <p>Subscribe Now</p>
+            <h4>Get My Newsletter</h4>
+            <p>Get latest news, updates, tips and tricks in your inbox</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form">
+              <form action=""><input type="email" placeholder="Your email here">
+              <button>Send Now</button></form>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- FORM END -->
+
+
+    <!-- FOOTER -->
+     <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="first">
+              <img src="./Images/Footer logo.png" alt="">
+            <p>Call:</p>
+            <a href="tel:+9984748473833">+9984748473833</a>
+            </div>
+          </div>
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="second">
+              <h4>Let's work together</h4>
+            <p>You can express yourself however you want and whenever you want, for free. You can customize a template or make your own.</p>
+            <p class="email">Email:</p>
+            <a href="mailto:dfsush@gmail.com">dfsush@gmail.com</a>
+            </div>
+          </div>
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="third">
+              <a href="#">Lets talk <span><i class="bi bi-send"></i></span></a>
+              <ul>
+                <label for="">Follow Me:</label>
+                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer_sm d-block d-lg-none">
+          <img src="./Images/Footer logo sm.png" alt="">
+          <h4>Let's work together</h4>
+          <p>You can express yourself however you want and whenever you want, for free. You can customize a template or make your own.</p>
+          <a href="#" class="Btn">Lets talk <span><i class="bi bi-send"></i></span></a>
+          <div class="row">
+            <div class="col-6">
+              <p>Call:</p>
+              <a href="tel:+9984748473833">+9984748473833</a>
+            </div>
+            <div class="col-6">
+              <p>Email:</p>
+              <a href="mailto:dfsush@gmail.com">dfsush@gmail.com</a>
+            </div>
+          </div>
+          <ul>
+            <label for="">Follow Me:</label>
+            <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+     </footer>
+    <!-- FOOTER END -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
